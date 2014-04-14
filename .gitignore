@@ -77,7 +77,7 @@ echo 1) Green
 ping localhost -n 1 >nul
 echo 2) Blue
 ping localhost -n 1 >nul
-echo m) Menu
+echo M) Menu
 set /p color=
 
 if %color% == 1 color 0a 
