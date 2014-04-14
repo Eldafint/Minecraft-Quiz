@@ -68,6 +68,23 @@ if %number% == 2 goto info
 if %number% == 3 goto options
 if %number% == 4 exit
 
+:options
+cls
+ping localhost -n 1 >nul
+echo Colors:
+ping localhost -n 1 >nul
+echo 1) Green
+ping localhost -n 1 >nul
+echo 2) Blue
+ping localhost -n 1 >nul
+echo m) Menu
+set /p color=
+
+if %color% == 1 color 0a 
+if %color% == 2 color 0b 
+if %color% == m goto menu
+goto options
+
 :game
 cls
 echo Who
