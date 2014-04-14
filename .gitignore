@@ -54,12 +54,27 @@ if %number% == 3 exit
 cls
 echo Who
 ping localhost -n 1 >nul
-echo are
+cls
+echo Who are
 ping localhost -n 1 >nul
-echo you?
+cls
+echo Who are you?
 set /p name=
 echo Hello %name%!
-echo Let's start the game? (y/n)
+cls
+echo Let's
+ping localhost -n 1 >nul
+cls
+echo Let's start
+ping localhost -n 1 >nul
+cls
+echo Let's start the
+ping localhost -n 1 >nul
+cls
+echo Let's start the game?
+ping localhost -n 1 >nul
+cls
+echo Let's start the game? (y/n) 
 set /p start=
 
 if %start% == y goto lvl1
