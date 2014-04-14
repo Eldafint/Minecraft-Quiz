@@ -50,11 +50,6 @@ if %number% == 1 goto game
 if %number% == 2 goto info
 if %number% == 3 exit
 
-:info
-echo Credits:
-echo MinerManc3x
-echo Legosoldat
-
 :game
 cls
 echo Who are you?
@@ -167,11 +162,17 @@ ping localhost -n 5 >nul
 exit
 
 :info
-cls
-echo Hello...
-ping localhost -n 2 >nul
-goto menu
-
+ping localhost -n 1 >nul
+---------------------------
+echo Credits:              
+ping localhost -n 1.5 >nul 
+echo MinerManc3x           
+ping localhost -n 1 >nul
+echo Legosoldat
+ping localhost -n 1 >nul
+echo Gameman2110
+ping localhost -n 1 >nul
+---------------------------
 
 
 
