@@ -1,7 +1,7 @@
 @echo off
 cls
-title MInecraft Quiz
-color 7f
+title Minecraft Quiz
+color 0f
 echo LOADING GAME
 ping localhost -n 2 >nul
 cls
