@@ -82,7 +82,7 @@ set /p color=
 
 if %color% == 1 color 0a 
 if %color% == 2 color 0b 
-if %color% == m goto menu
+if %color% == M goto menu
 goto options
 
 :game
