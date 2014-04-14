@@ -52,7 +52,11 @@ if %number% == 3 exit
 
 :game
 cls
-echo Who are you?
+echo Who
+ping localhost -n 1 >nul
+echo are
+ping localhost -n 1 >nul
+echo you?
 set /p name=
 echo Hello %name%!
 echo Let's start the game? (y/n)
