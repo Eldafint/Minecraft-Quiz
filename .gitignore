@@ -1,7 +1,7 @@
 @echo off
 cls
 title MInecraft Quiz
-color 0a
+color 7
 echo LOADING GAME
 ping localhost -n 2 >nul
 cls
@@ -53,7 +53,9 @@ echo 1) Start!
 ping localhost -n 2 >nul
 echo 2) Info
 ping localhost -n 2 >nul
-echo 3) Exit 
+echo 3) Options 
+ping localhost -n 2 >nul
+echo 4) Exit
 set /p number=
 
 if not defined number (
@@ -63,7 +65,8 @@ goto loop
 
 if %number% == 1 goto game
 if %number% == 2 goto info
-if %number% == 3 exit
+if %number% == 3 goto options
+if %number% == 4 exit
 
 :game
 cls
@@ -212,8 +215,16 @@ ping localhost -n 5 >nul
 goto menu
 
 
+:options
+ping localhost -n 1 >nul
+echo Colors:
+ping localhost -n 1 >nul
+echo 1) Green
+ping localhost -n 1 >nul
+echo 2) Blue
 
-
+if %number% == 1 color 0a
+if %number% == 2 color 0b
 
 
 
