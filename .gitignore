@@ -1,3 +1,187 @@
-echo off
+@echo off
 cls
-echo Hi
+title MInecraft Quiz
+color 0a
+echo LOADING GAME
+ping localhost -n 2 >nul
+cls
+echo LOADING GAME.
+ping localhost -n 2 >nul
+cls
+echo LOADING GAME..
+ping localhost -n 2 >nul
+cls
+echo LOADING GAME...
+ping localhost -n 2 >nul
+cls
+echo LOADING GAME
+ping localhost -n 2 >nul
+cls
+echo LOADING GAME.
+ping localhost -n 2 >nul
+cls
+echo LOADING GAME..
+ping localhost -n 2 >nul
+cls
+echo LOADING GAME...
+ping localhost -n 2 >nul
+cls
+@echo off
+:loop
+:menu
+cls
+echo Hello Welcome to MY game
+ping localhost -n 1 >nul
+echo Let's start!
+ping localhost -n 2 >nul
+echo 1) Start!
+ping localhost -n 2 >nul
+echo 2) Info
+ping localhost -n 2 >nul
+echo 3) Exit 
+set /p number=
+
+if not defined number (
+cls
+goto loop
+)
+
+if %number% == 1 goto game
+if %number% == 2 goto info
+if %number% == 3 exit
+
+:game
+cls
+echo Who are you?
+set /p name=
+echo Hello %name%!
+echo Let's start the game? (y/n)
+set /p start=
+
+if %start% == y goto lvl1
+if %start% == Y goto lvl1
+if %start% == n goto menu
+if %start% == N goto menu
+goto startgame
+
+:lvl1
+cls
+echo Who created Minecraft?
+echo A. Notch
+echo B. Jeb
+echo C. SkyTheKidRS
+echo D. Stamsite
+set /p !=
+
+if %!% == a goto cr1                     
+if %!% == b goto wr1
+if %!% == c goto wr1
+if %!% == d goto wr1
+goto lvl1
+
+:cr1
+echo CORRECT!
+echo.
+echo Continue? (y/n)
+set /p ha=
+
+if %ha% == y goto lvl2
+if %ha% == n goto lvl1
+goto cr1
+
+:wr1
+echo WRONG!
+echo.
+pause
+
+:lvl2
+cls
+echo What type of game is Minecraft?
+echo A. RPG
+echo B. Sandbox
+echo C. Platform
+echo D. mmo
+set /p !=
+
+if %!% == a goto wr2
+if %!% == b goto cr2
+if %!% == c goto wr2
+if %!% == d goto wr2
+goto lvl2
+
+:cr2
+echo CORRECT!
+echo.
+echo Continue? (y/n)
+set /p ha=
+
+if %ha% == y goto lvl3
+if %ha% == n goto lvl2
+goto cr2
+
+:wr2
+echo WRONG!
+echo.
+pause
+
+:lvl3
+cls
+echo Who is most famous Minecraft YouTuber?
+echo A. Stamsite
+echo B. PewDiePie
+echo C. SkyTheKidRS
+echo D. SethBling
+set /p !=
+
+if %!% == a goto wr3
+if %!% == b goto wr3
+if %!% == c goto cr3
+if %!% == d goto wr3
+goto lvl3
+
+:cr3
+echo CORRECT!
+echo.
+echo Continue? (y/n)
+set /p ha=
+
+if %ha% == y goto lvl4
+if %ha% == n goto lvl3
+goto cr3
+
+:wr3
+echo WRONG!
+echo.
+pause
+
+:lvl4
+cls
+echo Level 4 is W.I.P
+echo Coming soon...
+ping localhost -n 5 >nul
+exit
+
+:info
+cls
+echo Hello...
+ping localhost -n 2 >nul
+goto menu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
