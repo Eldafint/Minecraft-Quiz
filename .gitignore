@@ -77,11 +77,17 @@ echo 1) Green
 ping localhost -n 1 >nul
 echo 2) Blue
 ping localhost -n 1 >nul
+echo 3) Red
+ping localhost -n 1 >nul
+echo 4) Yellow
+ping localhost -n 1 >nul
 echo M) Menu
 set /p color=
 
 if %color% == 1 color 0a 
-if %color% == 2 color 0b 
+if %color% == 2 color 0b
+if %color% == 3 color 4
+if %color% == 4 color 0e
 if %color% == M goto menu
 goto options
 
