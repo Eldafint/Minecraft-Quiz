@@ -173,7 +173,8 @@ ping localhost -n 1 >nul
 echo Gameman2110
 ping localhost -n 1 >nul
 echo ---------------------------
-
+ping localhost -n 5 >nul
+goto menu
 
 
 
