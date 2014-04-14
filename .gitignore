@@ -48,13 +48,13 @@ cls
 echo Hello and Welcome to my game!
 ping localhost -n 1 >nul
 echo Let's start!
-ping localhost -n 2 >nul
+ping localhost -n 1 >nul
 echo 1) Start!
-ping localhost -n 2 >nul
+ping localhost -n 1 >nul
 echo 2) Info
-ping localhost -n 2 >nul
+ping localhost -n 1 >nul
 echo 3) Options 
-ping localhost -n 2 >nul
+ping localhost -n 1 >nul
 echo 4) Exit
 set /p number=
 
