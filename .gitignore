@@ -163,7 +163,7 @@ exit
 
 :info
 ping localhost -n 1 >nul
-echo---------------------------
+echo ---------------------------
 echo Credits:              
 ping localhost -n 1.5 >nul 
 echo MinerManc3x           
@@ -172,7 +172,7 @@ echo Legosoldat
 ping localhost -n 1 >nul
 echo Gameman2110
 ping localhost -n 1 >nul
-echo---------------------------
+echo ---------------------------
 
 
 
