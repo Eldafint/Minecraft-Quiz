@@ -223,7 +223,7 @@ echo 1) Green
 ping localhost -n 1 >nul
 echo 2) Blue
 ping localhost -n 1 >nul
-echo 3) Exit
+echo 3) Menu
 
 if %number% == 1 color 0a
 if %number% == 2 color 0b
