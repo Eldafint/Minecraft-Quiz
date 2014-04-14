@@ -86,7 +86,7 @@ set /p color=
 
 if %color% == 1 color 0a 
 if %color% == 2 color 0b
-if %color% == 3 color 4
+if %color% == 3 color 04
 if %color% == 4 color 0e
 if %color% == M goto menu
 goto options
