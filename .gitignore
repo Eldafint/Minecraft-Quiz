@@ -163,8 +163,31 @@ if %!% == d goto wr1
 goto lvl1
 
 :cr1
+echo C
+ping localhost -n 1 >nul
+cls
+echo CO
+ping localhost -n 1 >nul
+cls
+echo COR
+ping localhost -n 1 >nul
+cls
+echo CORR
+ping localhost -n 1 >nul
+cls
+echo CORRE
+ping localhost -n 1 >nul
+cls
+echo CORREC
+ping localhost -n 1 >nul
+cls
+echo CORRECT
+ping localhost -n 1 >nul
+cls
 echo CORRECT!
+ping localhost -n 1 >nul
 echo.
+ping localhost -n 1 >nul
 echo Continue? (y/n)
 set /p ha=
 
@@ -193,11 +216,33 @@ if %!% == d goto wr2
 goto lvl2
 
 :cr2
+echo C
+ping localhost -n 1 >nul
+cls
+echo CO
+ping localhost -n 1 >nul
+cls
+echo COR
+ping localhost -n 1 >nul
+cls
+echo CORR
+ping localhost -n 1 >nul
+cls
+echo CORRE
+ping localhost -n 1 >nul
+cls
+echo CORREC
+ping localhost -n 1 >nul
+cls
+echo CORRECT
+ping localhost -n 1 >nul
+cls
 echo CORRECT!
+ping localhost -n 1 >nul
 echo.
+ping localhost -n 1 >nul
 echo Continue? (y/n)
 set /p ha=
-
 if %ha% == y goto lvl3
 if %ha% == n goto lvl2
 goto cr2
@@ -223,8 +268,31 @@ if %!% == d goto wr3
 goto lvl3
 
 :cr3
+echo C
+ping localhost -n 1 >nul
+cls
+echo CO
+ping localhost -n 1 >nul
+cls
+echo COR
+ping localhost -n 1 >nul
+cls
+echo CORR
+ping localhost -n 1 >nul
+cls
+echo CORRE
+ping localhost -n 1 >nul
+cls
+echo CORREC
+ping localhost -n 1 >nul
+cls
+echo CORRECT
+ping localhost -n 1 >nul
+cls
 echo CORRECT!
+ping localhost -n 1 >nul
 echo.
+ping localhost -n 1 >nul
 echo Continue? (y/n)
 set /p ha=
 
