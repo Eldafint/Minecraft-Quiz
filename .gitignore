@@ -46,12 +46,15 @@ echo Hello and Welcome to my
 ping localhost -n 1 >nul
 cls
 echo Hello and Welcome to my game!
+cls
 goto introloop
 
 :introloop
 echo Hello and Welcome to my game!
-ping localhost -n 0.75 >nul
+ping localhost -n 1.25 >nul
 cls
+intro == intro + 1
+if %intro% == 10 goto menu 
 goto introloop
 
 :menu
