@@ -127,10 +127,20 @@ goto startgame
 
 :lvl1
 cls
+echo Who
+ping localhost -n 1 >nul
+cls
+echo Who created
+ping localhost -n 1 >nul
+cls
 echo Who created Minecraft?
+ping localhost -n 1 >nul
 echo A. Notch
+ping localhost -n 1 >nul
 echo B. Jeb
+ping localhost -n 1 >nul
 echo C. SkyTheKidRS
+ping localhost -n 1 >nul
 echo D. Stamsite
 set /p !=
 
