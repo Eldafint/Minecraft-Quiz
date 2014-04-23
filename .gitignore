@@ -319,9 +319,69 @@ pause
 
 :lvl4
 cls
-echo Where is minecraft from?
+echo Where
 ping localhost -n 1 >nul
-exit
+cls
+echo Where is 
+ping localhost -n 1 >nul
+cls
+echo Where is Minecraft
+ping localhost -n 1 >nul
+cls
+echo Where is Minecraft from?
+ping localhost -n 1 >nul
+echo A. America
+ping localhost -n 1 >nul
+echo B. Spain
+ping localhost -n 1 >nul
+echo C. Sweden
+ping localhost -n 1 >nul
+echo D. England
+set /p !=
+
+if %!% == a goto wr4                    
+if %!% == b goto wr4
+if %!% == c goto cr4
+if %!% == d goto wr4
+goto lvl4
+
+:cr4
+echo C
+ping localhost -n 1 >nul
+cls
+echo CO
+ping localhost -n 1 >nul
+cls
+echo COR
+ping localhost -n 1 >nul
+cls
+echo CORR
+ping localhost -n 1 >nul
+cls
+echo CORRE
+ping localhost -n 1 >nul
+cls
+echo CORREC
+ping localhost -n 1 >nul
+cls
+echo CORRECT
+ping localhost -n 1 >nul
+cls
+echo CORRECT!
+ping localhost -n 1 >nul
+echo.
+ping localhost -n 1 >nul
+echo Continue? (y/n)
+set /p ha=
+
+if %ha% == y goto lvl4
+if %ha% == n goto lvl3
+goto cr4
+
+:wr4
+echo WRONG!
+echo.
+pause
 
 :info
 cls
