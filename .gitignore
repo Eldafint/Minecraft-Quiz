@@ -298,10 +298,30 @@ pause
 
 :lvl4
 cls
-echo
-echo 
+echo Where
 ping localhost -n 1 >nul
-exit
+cls
+echo Where is 
+ping localhost -n 1 >nul
+cls
+echo Where is Minecraft
+ping localhost -n 1 >nul
+echo Where is Minecraft from?
+ping localhost -n 1 >nul
+echo A. America
+ping localhost -n 1 >nul
+echo B. Spain
+ping localhost -n 1 >nul
+echo C. Sweden
+ping localhost -n 1 >nul
+echo D. England
+set /p !=
+
+if %!% == a goto wr1                    
+if %!% == b goto wr1
+if %!% == c goto cr1
+if %!% == d goto wr1
+goto lvl4
 
 :info
 cls
