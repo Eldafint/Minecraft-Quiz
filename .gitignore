@@ -28,7 +28,7 @@ ping localhost -n 2 >nul
 cls
 @echo off
 :loop
-:intro
+:menu
 cls
 echo Hello
 ping localhost -n 1 >nul
@@ -46,6 +46,7 @@ echo Hello and Welcome to my
 ping localhost -n 1 >nul
 cls
 echo Hello and Welcome to my game!
+<<<<<<< HEAD
 cls
 goto introloop
 
@@ -58,6 +59,8 @@ if %intro% == 10 goto menu
 goto introloop
 
 :menu
+=======
+>>>>>>> parent of 22ad1fe... Flashing title!
 ping localhost -n 1 >nul
 echo Let's start!
 ping localhost -n 1 >nul
@@ -239,9 +242,9 @@ pause
 
 :lvl4
 cls
-echo
-echo 
-ping localhost -n 1 >nul
+echo Level 4 is W.I.P
+echo Coming soon...
+ping localhost -n 5 >nul
 exit
 
 :info
