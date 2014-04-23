@@ -317,11 +317,49 @@ ping localhost -n 1 >nul
 echo D. England
 set /p !=
 
-if %!% == a goto wr1                    
-if %!% == b goto wr1
-if %!% == c goto cr1
-if %!% == d goto wr1
+if %!% == a goto wr4                    
+if %!% == b goto wr4
+if %!% == c goto cr4
+if %!% == d goto wr4
 goto lvl4
+
+:cr4
+echo C
+ping localhost -n 1 >nul
+cls
+echo CO
+ping localhost -n 1 >nul
+cls
+echo COR
+ping localhost -n 1 >nul
+cls
+echo CORR
+ping localhost -n 1 >nul
+cls
+echo CORRE
+ping localhost -n 1 >nul
+cls
+echo CORREC
+ping localhost -n 1 >nul
+cls
+echo CORRECT
+ping localhost -n 1 >nul
+cls
+echo CORRECT!
+ping localhost -n 1 >nul
+echo.
+ping localhost -n 1 >nul
+echo Continue? (y/n)
+set /p ha=
+
+if %ha% == y goto lvl4
+if %ha% == n goto lvl3
+goto cr4
+
+:wr3
+echo WRONG!
+echo.
+pause
 
 :info
 cls
