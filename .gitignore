@@ -356,7 +356,7 @@ if %ha% == y goto lvl4
 if %ha% == n goto lvl3
 goto cr4
 
-:wr3
+:wr4
 echo WRONG!
 echo.
 pause
