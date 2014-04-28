@@ -315,12 +315,6 @@ pause
 
 :lvl4
 cls
-<<<<<<< HEAD
-echo Level 4 is W.I.P
-echo Coming soon...
-ping localhost -n 5 >nul
-exit
-=======
 echo Where
 ping localhost -n 1 >nul
 cls
