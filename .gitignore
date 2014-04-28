@@ -391,7 +391,6 @@ goto cr4
 echo WRONG!
 echo.
 pause
->>>>>>> b2946096b8643f5fdafcab83e7268f75f8106439
 
 :info
 cls
