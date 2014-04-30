@@ -72,9 +72,19 @@ if %number% == 2 goto info
 if %number% == 3 goto options
 if %number% == 4 exit
 if %number% == brony goto secret
+if %number% == pony goto secret2
 
-:secret
+:secret2
 cls
+echo R)
+ping localhost -n 1 >nul
+echo A)
+set /p brony=
+
+if %number% == r color 0b
+if %number% == a color
+if %number% == R color 0b
+if %number% == A color
 
 :options
 cls
