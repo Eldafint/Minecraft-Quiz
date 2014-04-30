@@ -50,6 +50,7 @@ cls
 goto menu
 
 :menu
+cls
 ping localhost -n 1 >nul
 echo Let's start!
 ping localhost -n 1 >nul
@@ -81,10 +82,20 @@ ping localhost -n 1 >nul
 echo A)
 set /p pony=
 
-if %pony% == r color 0b
+if %pony% == r color 0b 
 if %pony% == a color 0c
-if %pony% == R color 0b
+if %pony% == R color 0b 
 if %pony% == A color 0c
+if %pony% == A goto menu
+if %pony% == r goto menu
+if %pony% == a goto menu
+
+:secretletter
+cls
+echo P
+ping localhost -n 2 >nul
+cls
+goto menu
 
 :options
 cls
