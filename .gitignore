@@ -81,10 +81,10 @@ ping localhost -n 1 >nul
 echo A)
 set /p pony=
 
-if %number% == r color 0b
-if %number% == a color
-if %number% == R color 0b
-if %number% == A color
+if %pony% == r color 0b
+if %pony% == a color 0c
+if %pony% == R color 0b
+if %pony% == A color 0c
 
 :options
 cls
