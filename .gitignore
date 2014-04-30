@@ -79,7 +79,7 @@ cls
 echo R)
 ping localhost -n 1 >nul
 echo A)
-set /p brony=
+set /p pony=
 
 if %number% == r color 0b
 if %number% == a color
