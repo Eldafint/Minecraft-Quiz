@@ -75,6 +75,22 @@ if %number% == 4 exit
 if %number% == brony goto secret
 if %number% == pony goto secret2
 
+:secret
+ping localhost -n 1 >nul
+echo You
+ping localhost -n 1 >nul
+echo Have
+ping localhost -n 1 >nul
+echo Found
+ping localhost -n 1 >nul
+echo The
+ping localhost -n 1 >nul
+echo Secret
+ping localhost -n 1 >nul
+echo HACK!
+ping localhost -n 5 >nul
+Exit
+
 :secret2
 cls
 echo R)
