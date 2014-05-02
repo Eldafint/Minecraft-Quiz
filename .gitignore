@@ -147,7 +147,6 @@ ping localhost -n 1 >nul
 cls
 echo Who are you?
 set /p name=
-echo Hello %name%!
 cls
 echo Let's
 ping localhost -n 1 >nul
@@ -158,7 +157,7 @@ cls
 echo Let's start the
 ping localhost -n 1 >nul
 cls
-echo Let's start the game?
+echo Let's start the game %name%?
 ping localhost -n 1 >nul
 cls
 echo Let's start the game? (y/n) 
@@ -235,9 +234,11 @@ if %ha% == n goto lvl1
 goto cr1
 
 :wr1
-echo WRONG!
+echo WRONG %name%!
 echo.
-pause
+ping localhost -n 5 >nul
+goto menu
+
 
 :lvl2
 cls
