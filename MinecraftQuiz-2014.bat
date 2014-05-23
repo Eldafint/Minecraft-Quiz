@@ -1,4 +1,25 @@
 @echo off
+color 0a
+:title
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.                              
+echo                               MinecraftQuiz 2014                     
+echo.             
+echo.
+echo                                  GAMINGSTUDIO
+echo                                   2013-2014
+echo. 
+echo.                    
+echo.         
+echo.            
+ping localhost -n 6 >nul
+@echo off
 cls
 title Minecraft Quiz
 color 0f
@@ -30,27 +51,6 @@ cls
 :loop
 :menu
 cls
-echo Hello
-ping localhost -n 1 >nul
-cls
-echo Hello and
-ping localhost -n 1 >nul
-cls
-echo Hello and Welcome
-ping localhost -n 1 >nul
-cls
-echo Hello and Welcome to
-ping localhost -n 1 >nul
-cls
-echo Hello and Welcome to my
-ping localhost -n 1 >nul
-cls
-echo Hello and Welcome to my game!
-cls
-goto menu
-
-:menu
-cls
 ping localhost -n 1 >nul
 echo Let's start!
 ping localhost -n 1 >nul
@@ -74,22 +74,6 @@ if %number% == 3 goto options
 if %number% == 4 exit
 if %number% == brony goto secret
 if %number% == pony goto secret2
-
-:secret
-ping localhost -n 1 >nul
-echo You
-ping localhost -n 1 >nul
-echo Have
-ping localhost -n 1 >nul
-echo Found
-ping localhost -n 1 >nul
-echo The
-ping localhost -n 1 >nul
-echo Secret
-ping localhost -n 1 >nul
-echo HACK!
-ping localhost -n 5 >nul
-Exit
 
 :secret2
 cls
@@ -147,6 +131,7 @@ ping localhost -n 1 >nul
 cls
 echo Who are you?
 set /p name=
+echo Hello %name%!
 cls
 echo Let's
 ping localhost -n 1 >nul
@@ -157,7 +142,7 @@ cls
 echo Let's start the
 ping localhost -n 1 >nul
 cls
-echo Let's start the game %name%?
+echo Let's start the game?
 ping localhost -n 1 >nul
 cls
 echo Let's start the game? (y/n) 
@@ -218,12 +203,6 @@ ping localhost -n 1 >nul
 cls
 echo CORRECT!
 ping localhost -n 1 >nul
-echo +
-ping localhost -n 1 >nul
-echo 1
-ping localhost -n 1 >nul
-echo point
-ping localhost -n 1 >nul
 echo.
 ping localhost -n 1 >nul
 echo Continue? (y/n)
@@ -234,18 +213,35 @@ if %ha% == n goto lvl1
 goto cr1
 
 :wr1
-echo WRONG %name%!
+echo WRONG!
 echo.
-ping localhost -n 5 >nul
-goto menu
-
+pause
 
 :lvl2
 cls
+echo What
+ping localhost -n 1 >nul
+cls
+echo What type
+ping localhost -n 1 >nul
+cls
+echo What type of
+ping localhost -n 1 >nul
+cls
+echo What type of game
+ping localhost -n 1 >nul
+cls
+echo What type of game is
+ping localhost -n 1 >nul
+cls
 echo What type of game is Minecraft?
+ping localhost -n 1 >nul
 echo A. RPG
+ping localhost -n 1 >nul
 echo B. Sandbox
+ping localhost -n 1 >nul
 echo C. Platform
+ping localhost -n 1 >nul
 echo D. mmo
 set /p !=
 
@@ -294,10 +290,32 @@ pause
 
 :lvl3
 cls
+echo Who
+ping localhost -n 1 >nul
+cls
+echo Who is
+ping localhost -n 1 >nul
+cls
+echo Who is the
+ping localhost -n 1 >nul
+cls
+echo Who is the most
+ping localhost -n 1 >nul
+cls
+echo Who is the most famous
+ping localhost -n 1 >nul
+cls
+echo Who is the most famous Minecraft
+ping localhost -n 1 >nul
+cls
 echo Who is the most famous Minecraft YouTuber?
+ping localhost -n 1 >nul
 echo A. Stamsite
+ping localhost -n 1 >nul
 echo B. PewDiePie
-echo C. SkyTheKidRS
+ping localhost -n 1 >nul
+echo C. SkyDoesMinecraft
+ping localhost -n 1 >nul
 echo D. SethBling
 set /p !=
 
@@ -330,12 +348,6 @@ echo CORRECT
 ping localhost -n 1 >nul
 cls
 echo CORRECT!
-ping localhost -n 1 >nul
-echo +
-ping localhost -n 1 >nul
-echo 1
-ping localhost -n 1 >nul
-echo point
 ping localhost -n 1 >nul
 echo.
 ping localhost -n 1 >nul
@@ -417,10 +429,76 @@ echo WRONG!
 echo.
 pause
 
+:lvl5
+cls
+echo What
+ping localhost -n 1 >nul
+cls
+echo What mob
+ping localhost -n 1 >nul
+cls
+echo What mob uses
+ping localhost -n 1 >nul
+cls
+echo What mob uses bow?
+ping localhost -n 1 >nul
+echo A. Zombie
+ping localhost -n 1 >nul
+echo B. Skeleton
+ping localhost -n 1 >nul
+echo C. Enderman
+ping localhost -n 1 >nul
+echo D. Creeper
+set /p !=
+
+if %!% == a goto wr5                    
+if %!% == b goto cr5
+if %!% == c goto wr5
+if %!% == d goto wr5
+goto lvl5
+
+:cr5
+echo C
+ping localhost -n 1 >nul
+cls
+echo CO
+ping localhost -n 1 >nul
+cls
+echo COR
+ping localhost -n 1 >nul
+cls
+echo CORR
+ping localhost -n 1 >nul
+cls
+echo CORRE
+ping localhost -n 1 >nul
+cls
+echo CORREC
+ping localhost -n 1 >nul
+cls
+echo CORRECT
+ping localhost -n 1 >nul
+cls
+echo CORRECT!
+ping localhost -n 1 >nul
+echo.
+ping localhost -n 1 >nul
+echo Continue? (y/n)
+set /p ha=
+
+if %ha% == y goto lvl6
+if %ha% == n goto lvl5
+goto cr5
+
+:wr5
+echo WRONG!
+echo.
+pause
+
 :info
 cls
 ping localhost -n 1 >nul
-echo ---------------------------
+echo --------------
 echo Credits:              
 ping localhost -n 1.5 >nul 
 echo MinerManc3x           
@@ -429,6 +507,15 @@ echo Legosoldat
 ping localhost -n 1 >nul
 echo Gameman2110
 ping localhost -n 1 >nul
-echo ---------------------------
+echo --------------
+echo.
+echo --------------
+echo Priser:
+ping localhost -n 1.5 >nul
+echo Hastveda Nytt:
+ping localhost -n 1 >nul
+echo Veckans spel vecka 22!
+ping localhost -n 1 >nul
+echo --------------
 ping localhost -n 5 >nul
 goto menu
